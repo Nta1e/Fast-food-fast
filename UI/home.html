@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Merienda One|Inconsolata" rel="stylesheet">
+    <title>Fast-food-fast|Home</title>
+</head>
+<body>
+<header>
+<div class="topnav">
+
+    <span class="header-brand">Fast-food-fast</span><br>
+    
+</div>
+
+</header>
+
+<main>
+<div id="popupbox" class="popup-position">
+<div id="popup-wrapper">
+    <div id="popup-container">
+<form action="" class="order-form">
+    <div class="combine">
+
+        <div class="datef">
+            <span class="label">Date:</span>
+            <input type="date" size="30" required>
+        </div>
+
+        <div class="tim">
+            <span class="label">Delivery Time:</span>
+            <input type="time" size="30" required>
+        </div>
+    </div>
+    <div class="combine1">
+        <div class="location-input">
+            <span class="label">Location:</span>
+            <input type="text" placeholder="" required>
+        </div>
+        <div class="custom-select" style="width:200px;">
+            <select>
+                <option value="0">...Select Order...</option>
+                <option value="1">1 Chicken Wing</option>
+                <option value="2">3 Chicken Wings</option>
+                <option value="3">Fried fish</option>
+                <option value="4">Meatloaf</option>
+                <option value="5">Pilawo</option>
+                <option value="6">French Fries</option>
+                <option value="7">Beef ribs</option>
+                <option value="8">Pork ribs</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <span class="label">comment:</span><br>
+    <textarea name="comment" class="commentbox"></textarea>
+<a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button >Make Order</button></a>
+
+
+</form>
+</div>
+</div>
+</div>
+
+<a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="order-btn" ><b>+</b> Add Order</button></a></td>
+    <table id="ResponsiveTable">
+
+
+<h3 id="TableTitle">Orders </h3>
+        
+        <tbody>
+            <tr id="HeadRow">
+                <td>
+                    <!--ID-->
+                </td>
+                
+                <td>Order:</td>
+                <td>Location:</td>
+                <td>Order Date:</td>
+                <td>Delivery time:</td>
+                <td>Comment:</td>
+                
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td tableHeadData="id">1</td>
+                <td tableHeadData="0rder:">Pilawo</td>
+                <td tableHeadData="Location:">Ntinda</td>
+                <td tableHeadData="Order Date:">28-08-2018</td>
+                <td tableHeadData="Delivery time:">13:45</td>
+                <td tableHeadData="Comment">Just...give me my money's worth.</td>
+                <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td>
+               
+            </tr>
+            <tr>
+                <td tableHeadData="id">2</td>
+                <td tableHeadData="0rder:">Pilawo</td>
+                <td tableHeadData="Location:">Ntinda</td>
+                <td tableHeadData="Order Date:">28-08-2018</td>
+                <td tableHeadData="Delivery time:">13:45</td>
+                <td tableHeadData="Comment">Just...give me my money's worth.</td>
+                <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td>
+                
+            </tr>
+            <tr>
+                <td tableHeadData="id">3</td>
+                <td tableHeadData="0rder:">Pilawo</td>
+                <td tableHeadData="Location:">Ntinda</td>
+                <td tableHeadData="Order Date:">28-08-2018</td>
+                <td tableHeadData="Delivery time:">13:45</td>
+                <td tableHeadData="Comment">Just...give me my money's worth.</td>
+                <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td>
+                
+            <tr>
+                <td tableHeadData="id">4</td>
+                <td tableHeadData="0rder:">Pilawo</td>
+                <td tableHeadData="Location:">Ntinda</td>
+                <td tableHeadData="Order Date:">28-08-2018</td>
+                <td tableHeadData="Delivery time:">13:45</td>
+                <td tableHeadData="Comment">Just...give me my money's worth.</td>
+                <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td>
+                
+            </tr>
+        </tbody>
+
+    </table>
+</main>
+<script src="js/main.js"></script>
+</body>
+</body>
+</html>
