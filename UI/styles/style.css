@@ -1,0 +1,340 @@
+
+
+
+body {
+    background-color: #ECF0F1;
+}
+
+p {
+    text-align: center;
+    font-size: 28px;
+    text-justify: auto;
+    color: #1c7f7f;
+    font-family: Inconsolata;
+    
+}
+#top-text{
+    text-align: center;
+    font-size: 38px;
+    text-justify: auto;
+    color: #1c7f7f;
+    font-family: Rochester;
+    margin-top: -10px;
+    letter-spacing: 3px;
+    
+}
+header .header-brand {
+    color: #E74F12;
+    font-size: 50px;
+    font-weight: 800px;
+    font-family: Merienda One;
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.topnav {
+    padding: 10px;
+    background-color: #A6ACAF;
+    box-shadow: 0px 3px 10px #cecdcd;
+}
+.topnav a {
+    padding: 13px;
+    float: right;
+    color: #E74C3C;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: Merienda One;
+
+}
+
+.topnav a:hover {
+
+    color: #1c7f7f;
+}
+
+.container {
+    margin: 10px;
+    width: calc(100%-20px);
+    float: right;
+}
+
+.vl {
+    /*vertical line*/
+    border-left: 6px solid #1c7f7f;
+    height: 560px;
+    position:absolute;
+    left: 925px;
+    top: 365px;
+}
+
+.index-banner img {
+    padding-top: 21px;
+}
+
+form {
+    background: #A6ACAF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: right;
+    box-shadow: 0px 3px 10px #cecdcd;
+}
+
+input {
+    font-family: Raleway;
+    outline: 1;
+    background: #fff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 18px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    background: #1c7f7f;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Inconsolata;
+    width: 100%;
+    padding:15px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1A7770;
+}
+
+.label {
+    float: left;
+    font-size: 20px;
+    text-justify: auto;
+    color: #1c7f7f;
+    font-family: Inconsolata;
+}
+
+footer {
+    padding: 20px;
+    background-color: #A6ACAF;
+    box-shadow: 0px 3px 10px #cecdcd;
+    text-align: center;
+}
+
+.foot {
+    font-family: Inconsolata;
+    font-size: 20px;
+    text-justify: auto;
+    color: #E74C3C;
+}
+
+#reminder{
+    font-family: Inconsolata;
+    font-size: 18px;
+}
+
+.container2{
+    text-align: center;
+    
+}
+
+#ResponsiveTable {
+    width: 70%;
+    margin: 50px 50px 0px 150px;
+    box-shadow: 0px 3px 10px #cecdcd;
+    color: #1A7770;
+    
+}
+
+#TableTitle {
+    text-align: center;
+    font-size: 32px;
+    color:#1c7f7f;
+    font-weight: bold;
+}
+
+#HeadRow {
+    color: rgb(22, 88, 83);
+    font-weight: 500;
+    background-color: #f3f3f3;
+    font-family: Raleway;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+#ResponsiveTable td {
+    padding: 10px;
+    font-family: sans-serif;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+#ResponsiveTable td button a {
+    text-decoration: none;
+    color: #fff;
+}
+.order-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Inconsolata;
+}
+.order-btn{
+    background:rgb(22, 88, 83);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Inconsolata;
+    width: 12%;
+    padding:15px;
+    font-size: 20px;
+    border-left: 50px;
+    float: right;
+}
+.order-form{
+     background:#ECF0F1;
+     max-width: 360px;
+     margin: 0 auto 100px;
+     padding: 25px;
+     text-align: right;
+     box-shadow: 0px 3px 10px #cecdcd;
+     border-radius: 4px;
+}
+.order-form input{
+    font-family: Raleway;
+    outline: 1;
+    background: #fff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 18px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 4px;
+
+}
+
+.btn-1{
+     background:green;
+     color: #fff;
+     padding: 5px;
+     border-radius: 4px;
+     border: 0;
+     cursor: pointer;
+     font-size: 25px;
+     font-family: Inconsolata;
+     width: 100%;
+     padding:15px;
+     font-size: 14px;
+} 
+.btn-2{
+     background:red;
+     color: #fff;
+     padding: 5px;
+     border-radius: 4px;
+     border: 0;
+     cursor: pointer;
+     font-size: 25px;
+     font-family: Inconsolata;
+     width: 100%;
+     padding:15px;
+     font-size: 14px;
+}
+
+.combine .datef {
+    float: left;
+    width: 48%;
+}
+
+.combine .tim{
+    float: right;
+    width: 45%;
+}
+.commentbox{
+    width:98%;
+    height:50px;
+    margin-bottom:0px;
+    margin-top: 0px;
+    
+}
+.location-input{
+    float: left;
+    width:48%;
+}
+.custom-select{
+    float: right;
+
+    position: relative;
+    top: -63px;
+}
+select{
+    background-position:300px;
+    width:85%;
+    padding:11px;
+    border-radius:4px;
+    background-color:#fff;
+    font-family: Raleway;
+    font-size:16px;
+    border-color:transparent;
+}
+.popup-position{
+    position: fixed;
+    top:170px;
+    width:100%;
+    background: inherit;
+    background-color:transparent;
+    display: none;
+}
+ 
+#popup-wrapper{
+    border-radius:8px;
+}
+.checkbox-container input {
+    display: none;
+}
+.checkbox-container {
+    display: inline-block;
+    top: -18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container input:checked+.checkmark {
+    background-color: #1c7f7f;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #95A5A6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover .checkmark {
+    background-color: #1c7f7f;
+}
+
+.checkbox-container input:checked+.checkmark::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 9px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
