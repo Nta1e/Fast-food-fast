@@ -5,6 +5,9 @@ function Declined(){
 function Accepted(){
     alert('Order accepted!')
 }
+function Deleted(){
+    alert('Item Deleted!')
+}
 function toggle_visibility(id){
     var e = document.getElementById(id);
     if(e.style.display == 'block')
