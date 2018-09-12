@@ -47,7 +47,38 @@ header .header-brand {
     font-family: Merienda One;
 
 }
+.topnav .admin-nav{
+    padding: 13px;
+    float: left;
+    color: #E74C3C;
+    text-decoration:none;
+    font-size: 22px;
+    font-family: Merienda One;
+}
+.topnav #active {
+    border-bottom: #1c7f7f 2px solid;
+    color: #1c7f7f;
 
+}
+i{
+    float:right;
+    font-size: 33px;
+    width:3%;
+    color: #1c7f7f;
+}
+/* i:hover{
+    background-color:#a6acaf
+} */
+#l-out{
+    font-size: 12px;
+}
+i #l-out {
+    display: none;
+}
+
+i:hover #l-out{
+    display: block;
+}
 .topnav a:hover {
 
     color: #1c7f7f;
@@ -80,6 +111,26 @@ form {
     text-align: right;
     box-shadow: 0px 3px 10px #cecdcd;
 }
+#add-item{
+    margin:0;
+    background:none;
+    padding:0;
+    box-shadow: none;
+    text-align: center;
+    margin-top:15px;
+
+}
+#edt-order{
+    margin:0;
+    background:#a6acaf;
+    padding-left:33px;
+    padding-right:140px;
+    padding-top:-33px;
+    box-shadow:none;
+    text-align: center;
+    margin-top:5px;
+    width:85%;
+}
 
 input {
     font-family: Raleway;
@@ -106,7 +157,6 @@ button {
     padding:15px;
     font-size: 14px;
 }
-
 button:hover {
     background: #1A7770;
 }
@@ -149,6 +199,12 @@ footer {
     box-shadow: 0px 3px 10px #cecdcd;
     color: #1A7770;
     
+}
+#admin-table{
+     width: 70%;
+     margin: 50px 50px 0px 150px;
+     box-shadow: 0px 3px 10px #cecdcd;
+     color: #1A7770;
 }
 
 #TableTitle {
@@ -198,7 +254,7 @@ tr:nth-of-type(odd) {
     padding:15px;
     font-size: 20px;
     border-left: 50px;
-    float: right;
+    float: left;
 }
 .order-form{
      background:#ECF0F1;
@@ -236,6 +292,7 @@ tr:nth-of-type(odd) {
      padding:15px;
      font-size: 14px;
 } 
+
 .btn-2{
      background:red;
      color: #fff;
@@ -249,7 +306,62 @@ tr:nth-of-type(odd) {
      padding:15px;
      font-size: 14px;
 }
+.btn-5{
+    background:green;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Inconsolata;
+    width: 55%;
+    font-size: 14px;
 
+}
+.btn-7{
+    background:#1A7770;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Inconsolata;
+    width: 75%;
+    font-size: 14px;
+
+}
+.btn-7:hover{
+    background-color: lightslategray;
+
+}
+.btn-8{
+    width:135%;
+    margin-bottom: 12px;
+}
+
+#btns1{
+    text-align: right;
+}
+#btns2{
+    text-align: left;
+}
+
+.btn-6{
+    background:red;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Inconsolata;
+    width: 55%;
+    font-size: 14px;
+
+
+}
 .combine .datef {
     float: left;
     width: 48%;
@@ -298,6 +410,10 @@ select{
 #popup-wrapper{
     border-radius:8px;
 }
+#wrap{
+    margin-left:540px;
+    margin-top:124px;
+}
 .checkbox-container input {
     display: none;
 }
@@ -337,4 +453,11 @@ select{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+.Box-container{
+    width: 900px;
+    height: 400px;
+    
+    text-align: center;
+    margin-left: 300px;
 }
