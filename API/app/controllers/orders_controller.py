@@ -33,3 +33,21 @@ def create_order():
         )
         Orders_list.append(new_order.__dict__)
         return jsonify({'Message': 'New order created'}), 201
+
+
+def edit_one(order_id):
+    '''This function handles the updating of a particular order by id by 
+    passing in the order_id as the arguement'''
+    try:
+        data = request.json
+        temp_list = [
+            each for each in Orders_list if each['id'] == order_id]
+        temp_list[0]['order'] = data.get('order')
+        temp_list[0]['location'] = data.get('location')
+        temp_list[0]['comment'] = data.get('comment')
+        temp_list[0]['price'] = data.get('price')
+        temp_list[0]['delivery_time'] = data.get('delivery_time')
+        return jsonify({'Message': 'Order Updated'}), 201
+
+    except IndexError:
+        return jsonify({'error': 'Not found!'}), 404
