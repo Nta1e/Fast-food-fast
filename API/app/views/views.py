@@ -19,7 +19,3 @@ def create_new():
     return orders_controller.create_order()
 
 
-@Fast_food.route('/orders', methods=['GET'])
-def return_all():
-    '''This route fetches all the orders made'''
-    return jsonify({'Orders': Orders_list})

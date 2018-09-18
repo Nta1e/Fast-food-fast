@@ -95,17 +95,11 @@ class TestCase(unittest.TestCase):
                 self.incomplete),
             content_type='application/json')
         self.assertEqual(res.status_code, 400)
-
-    def test_get_all_method(self):
-        '''This tests the get_all method'''
         res = self.client.post(
             '/api/v1/orders',
             data=json.dumps(
                 self.orders),
             content_type='application/json')
-
-        res = self.client.get('/api/v1/orders')
-        self.assertEqual(res.status_code, 200)
 
 
 if __name__ == '__main__':
