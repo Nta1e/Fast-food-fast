@@ -95,6 +95,11 @@ class TestCase(unittest.TestCase):
                 self.incomplete),
             content_type='application/json')
         self.assertEqual(res.status_code, 400)
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
 
     def test_put_method_response_status_code(self):
         '''This tests the put method's response status code'''

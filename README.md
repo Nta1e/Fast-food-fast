@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=ft-update-an-entry-160503979)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
-[![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=ft-update-an-entry-160503979)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=ft-update-an-entry-160503979)
+
 # Fast-food-fast
 
 Fast-Food-Fast is a food delivery service app for a restaurant.
