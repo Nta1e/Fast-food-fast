@@ -1,0 +1,16 @@
+language: python
+
+python:
+  - 3.6
+  
+services:
+  - postgresql
+  
+install:
+  - pip install -r requirements.txt
+  script:
+  - cd API
+  - nosetests --with-coverage --cover-package=tests
+  
+after_success: 
+  - coveralls
