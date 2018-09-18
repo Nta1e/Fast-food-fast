@@ -1,18 +1,51 @@
+[![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=ft-create-new-order-160503696)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
+[![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=ft-create-new-order-160503696)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=ft-create-new-order-160503696)
 # Fast-food-fast
+
 Fast-Food-Fast is a food delivery service app for a restaurant.
 
-## Project OverView
-The front-end is built with HTML5, CSS3 and a little bit of Javascript
+## THe project has the following routes
 
-## Features
-A user creates an account, logs in and access all features of the app.
+| REQUEST | ROUTE | FUNCTIONALITY |
+| ------- | ----- | ------------- |
+| POST | /api/v1/orders | Creates a new  order|
+| GET | api/v1/orders | Returns all orders made |
+| GET | api/v1/orders/&lt;order_id&gt; | Returns a specific order |
+| PUT | api/v1/orders/&lt;order_id&gt; | Updates a specific order |
+| DELETE| api/v1/orders/&lt;order_id&gt;| Deletes a specific order |
 
-### User Previleges
-- View a list of previous orders
-- Make an Order
-- Update an order
+## BUILT WITH
 
-### Admin Previleges
-- Accept orders
-- Decline orders
-- Mark orders as complete
+* Flask - Python Framework used
+
+## SETTING UP APPLICATION
+
+1. Create a folder Fast-food-fast
+
+    Clone repository to the folder
+
+    **```git clone https://github.com/NtaleShadik/Fast-food-fast.git```**
+
+2. Create a virtual environment that you are going to use while running the application locally
+
+    **```$ python3 -m venv env```**
+
+    **```$ source  env/bin/activate```**
+
+3. Install all project dependencies using
+
+    **```pip3 install -r requirements.txt```**
+
+4. Run the appliction from the root of your folder using
+    
+    **```python3 run.py```**
+
+5. Run the tests
+
+    **```$ cd API```**
+
+    **```$ nosetests -v```**
+
+## Author
+
+*Ntale Shadik*
