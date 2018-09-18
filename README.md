@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=develop)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
+[![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=develop)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=develop)
 
 # Fast-food-fast
 
