@@ -19,4 +19,24 @@ def create_new():
     return orders_controller.create_order()
 
 
+@Fast_food.route('/orders', methods=['GET'])
+def return_all():
+    '''This route fetches all the orders made'''
+    return jsonify({'Orders': Orders_list})
+
+
+@Fast_food.route('/orders/<int:order_id>', methods=['GET'])
+def return_one(order_id):
+    '''This route fetches a specific order by id'''
+    specific = orders_controller.get_one(order_id)
+    return specific
+
+
+@Fast_food.route('/orders/<int:order_id>', methods=['PUT'])
+def update_one(order_id):
+    '''This order updates a specific order by id'''
+    specific = orders_controller.edit_one(order_id)
+    return specific
+
+
 

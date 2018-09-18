@@ -101,6 +101,49 @@ class TestCase(unittest.TestCase):
                 self.orders),
             content_type='application/json')
 
+    def test_get_all_method(self):
+        '''This tests the get_all method'''
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
+
+        res = self.client.get('/api/v1/orders')
+        self.assertEqual(res.status_code, 200)
+
+    def test_get_one_method_response_status_code(self):
+        '''This tests the get_one method response status code '''
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
+
+        res = self.client.get('/api/v1/orders/1')
+        self.assertEqual(res.status_code, 200)
+
+    def test_get_one_method_response(self):
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
+
+        res = self.client.get('/api/v1/orders/13')
+        self.assertEqual(res.status_code, 404)
+
+    def test_get_one_method_response_data(self):
+        '''This tests the get_one method response data'''
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
+
+        res = self.client.get('/api/v1/orders/23')
+        self.assertTrue(b'Not found!'in res.data)
+
     def test_put_method_response_status_code(self):
         '''This tests the put method's response status code'''
         res = self.client.post(
@@ -130,6 +173,7 @@ class TestCase(unittest.TestCase):
                 self.update),
             content_type='application/json')
         self.assertTrue(b'Order Updated' in res.data)
+
 
 if __name__ == '__main__':
     unittest.main()
