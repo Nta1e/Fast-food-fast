@@ -19,8 +19,3 @@ def create_new():
     return orders_controller.create_order()
 
 
-@Fast_food.route('/orders/<int:order_id>', methods=['GET'])
-def return_one(order_id):
-    '''This route fetches a specific order by id'''
-    specific = orders_controller.get_one(order_id)
-    return specific
