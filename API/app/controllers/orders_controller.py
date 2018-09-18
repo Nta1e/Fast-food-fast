@@ -35,13 +35,4 @@ def create_order():
         return jsonify({'Message': 'New order created'}), 201
 
 
-def get_one(order_id):
-    '''This function handles returning of a specific orders by id by passing
-     in the order_id as the arguement'''
-    try:
-        temp_list = [
-            each for each in Orders_list if each['id'] == order_id]
-        return jsonify({'Order {}'.format(order_id): temp_list[0]}), 200
 
-    except IndexError:
-        return jsonify({'error': 'Not found!'}), 404

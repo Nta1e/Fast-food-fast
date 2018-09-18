@@ -101,6 +101,35 @@ class TestCase(unittest.TestCase):
                 self.orders),
             content_type='application/json')
 
+    def test_put_method_response_status_code(self):
+        '''This tests the put method's response status code'''
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
+
+        res = self.client.put(
+            '/api/v1/orders/1',
+            data=json.dumps(
+                self.update),
+            content_type='application/json')
+        self.assertEqual(res.status_code, 201)
+
+    def test_put_method_response_data(self):
+        '''This tests the put method's response data'''
+        res = self.client.post(
+            '/api/v1/orders',
+            data=json.dumps(
+                self.orders),
+            content_type='application/json')
+
+        res = self.client.put(
+            '/api/v1/orders/1',
+            data=json.dumps(
+                self.update),
+            content_type='application/json')
+        self.assertTrue(b'Order Updated' in res.data)
 
 if __name__ == '__main__':
     unittest.main()
