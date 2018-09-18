@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=ft-create-new-order-160503696)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
-[![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=ft-create-new-order-160503696)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=ft-create-new-order-160503696)
+[![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=ft-get-all-orders-160503734)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
+[![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=ft-get-all-orders-160503734)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=ft-get-all-orders-160503734)
 # Fast-food-fast
 
 Fast-Food-Fast is a food delivery service app for a restaurant.
+The user interface is hosted [here](https://ntaleshadik.github.io/Fast-food-fast/UI/index.html)
 
 ## THe project has the following routes
 
