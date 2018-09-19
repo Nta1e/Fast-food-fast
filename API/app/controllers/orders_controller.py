@@ -6,7 +6,7 @@ from ..models.orders import Orders, Orders_list
 def create_order():
     '''This function handles creating of a new order by passing in requested json
     data as instance variables into the Orders class and appending the Orders
-    class namespace into the Orders_list'''
+    class namespace into the Orders_list.'''
     data = request.json
     given_data = {
         'order': data.get('order'),

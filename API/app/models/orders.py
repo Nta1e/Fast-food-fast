@@ -17,4 +17,3 @@ class Orders:
         self.date = current_date[:10]
         self.price = price
         self.delivery_time = delivery_time
-        
