@@ -34,6 +34,6 @@ def return_one(order_id):
 
 @Fast_food.route('/orders/<int:order_id>', methods=['PUT'])
 def update_one(order_id):
-    '''This order updates a specific order by id'''
+    '''This order updates a specific order by id.'''
     specific = orders_controller.edit_one(order_id)
     return specific

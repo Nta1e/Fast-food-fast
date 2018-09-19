@@ -63,5 +63,3 @@ def edit_one(order_id):
 
     except IndexError:
         return jsonify({'error': 'Not found!'}), 404
-
-
