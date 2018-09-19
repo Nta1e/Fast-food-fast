@@ -174,6 +174,5 @@ class TestCase(unittest.TestCase):
             content_type='application/json')
         self.assertTrue(b'Order Updated' in res.data)
 
-
 if __name__ == '__main__':
     unittest.main()
