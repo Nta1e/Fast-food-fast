@@ -10,10 +10,10 @@ The user interface is hosted [here](https://ntaleshadik.github.io/Fast-food-fast
 
 | REQUEST | ROUTE | FUNCTIONALITY |
 | ------- | ----- | ------------- |
-| POST | ```/api/v1/orders``` | _Creates a new  order_|
-| GET | ```/api/v1/orders``` | _Returns all orders made_ |
-| GET | ```/api/v1/orders/<order_id>;``` | _Returns a specific order_ |
-| PUT | ```/api/v1/orders/<order_id>;``` | _Updates a specific order_ |
+| *POST* | ```/api/v1/orders``` | _Creates a new  order_|
+| *GET* | ```/api/v1/orders``` | _Returns all orders made_ |
+| *GET* | ```/api/v1/orders/<order_id>;``` | _Returns a specific order_ |
+| *PUT* | ```/api/v1/orders/<order_id>;``` | _Updates a specific order_ |
 
 ## BUILT WITH
 
