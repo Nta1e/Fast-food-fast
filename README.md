@@ -43,12 +43,6 @@ The user interface is hosted [here](https://ntaleshadik.github.io/Fast-food-fast
 
     **```python3 run.py```**
 
-5. Run the tests
-
-    **```$ cd API```**
-
-    **```$ nosetests -v```**
-
 ## Author
 
 *Ntale Shadik*
