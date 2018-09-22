@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=develop)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
 [![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=develop)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=develop)
 [![GitHub last commit](https://img.shields.io/github/last-commit/NtaleShadik/Fast-food-fast/develop.svg)](https://shields.io/#/examples/othttps://github.com/NtaleShadik/Fast-food-fast/tree/develope)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4eaa8ce475e5272c5468/maintainability)](https://codeclimate.com/github/NtaleShadik/Fast-food-fast/maintainability)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
