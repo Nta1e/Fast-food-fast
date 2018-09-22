@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/NtaleShadik/Fast-food-fast.svg?branch=develop)](https://travis-ci.org/NtaleShadik/Fast-food-fast)
 [![Coverage Status](https://coveralls.io/repos/github/NtaleShadik/Fast-food-fast/badge.svg?branch=develop)](https://coveralls.io/github/NtaleShadik/Fast-food-fast?branch=develop)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 
 # Fast-food-fast
 
@@ -38,7 +40,7 @@ The user interface is hosted [here](https://ntaleshadik.github.io/Fast-food-fast
     **```pip3 install -r requirements.txt```**
 
 4. Run the appliction from the root of your folder using
-    
+
     **```python3 run.py```**
 
 5. Run the tests
