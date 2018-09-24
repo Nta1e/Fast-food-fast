@@ -7,8 +7,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - cd API
+  - cd api
   - nosetests --with-coverage --cover-package=tests
-  
-after_success: 
+
+after_success:
   - coveralls
