@@ -1,12 +1,12 @@
 from flask import jsonify, request
 import json
-from ..models.orders import Orders, Orders_list
+from ..models.orders import Orders, orders_list
 
 
 def create_order():
     '''This function handles creating of a new order by passing in requested json
     data as instance variables into the Orders class and appending the Orders
-    class namespace into the Orders_list.'''
+    class namespace into the orders_list.'''
     data = request.json
     given_data = {
         'order': data.get('order'),
@@ -15,6 +15,7 @@ def create_order():
         'price': data.get('price'),
         'delivery_time': data.get('delivery_time')
     }
+
     if not all(
         [data.get('order'),
          data.get('location'),
@@ -31,35 +32,37 @@ def create_order():
             given_data['price'],
             given_data['delivery_time']
         )
-        Orders_list.append(new_order.__dict__)
-        return jsonify({'Message': 'New order created'}), 201
+        orders_list.append(new_order.__dict__)
+        return jsonify({'Message': 'New order created',
+                        "order": new_order.__dict__}), 201
 
 
 def get_one(order_id):
     '''This function handles returning of a specific orders by id by passing
      in the order_id as the arguement'''
     try:
-        temp_list = [
-            each for each in Orders_list if each['id'] == order_id]
-        return jsonify({'Order {}'.format(order_id): temp_list[0]}), 200
+        updated_order = [
+            each for each in orders_list if each['id'] == order_id]
+        return jsonify({'Order {}'.format(order_id): updated_order[0]}), 200
 
     except IndexError:
         return jsonify({'error': 'Not found!'}), 404
 
 
 def edit_one(order_id):
-    '''This function handles the updating of a particular order by id by 
+    '''This function handles the updating of a particular order by id by
     passing in the order_id as the arguement'''
     try:
         data = request.json
-        temp_list = [
-            each for each in Orders_list if each['id'] == order_id]
-        temp_list[0]['order'] = data.get('order')
-        temp_list[0]['location'] = data.get('location')
-        temp_list[0]['comment'] = data.get('comment')
-        temp_list[0]['price'] = data.get('price')
-        temp_list[0]['delivery_time'] = data.get('delivery_time')
-        return jsonify({'Message': 'Order Updated'}), 201
+        updated_order = [
+            each for each in orders_list if each['id'] == order_id]
+        updated_order[0]['order'] = data.get('order')
+        updated_order[0]['location'] = data.get('location')
+        updated_order[0]['comment'] = data.get('comment')
+        updated_order[0]['price'] = data.get('price')
+        updated_order[0]['delivery_time'] = data.get('delivery_time')
+        return jsonify({'Message': 'Order Updated',
+                        "order": updated_order}), 201
 
     except IndexError:
         return jsonify({'error': 'Not found!'}), 404
