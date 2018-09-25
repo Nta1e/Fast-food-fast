@@ -7,8 +7,6 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - cd api
-  - nosetests --with-coverage --cover-package=tests
-
+  - pytest api/tests/ --cov=api/app/ --cov-report term-missing
 after_success:
   - coveralls
