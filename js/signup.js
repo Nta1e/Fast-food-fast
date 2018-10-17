@@ -7,7 +7,7 @@ function userSignup(event){
 	let email = document.getElementById('email').value;
 	let password = document.getElementById('password').value;
 	let confirmPassword = document.getElementById('confirmPassword').value;
-
+	//declaring errors,messages and status variables to be used
 	let error = document.getElementById('error');
 	let success = document.getElementById('message');
 	let status = '';
@@ -34,10 +34,11 @@ function userSignup(event){
             document.getElementById('error').innerHTML = data["error"];
         }
         if (status == 201 ){
-            window.location = 'signup.html';
+            window.location = 'index.html';
             error.style.display='none';
             success.style.display= 'block';
             document.getElementById('message').innerHTML = data['message'];
         }
     })
 }
+
