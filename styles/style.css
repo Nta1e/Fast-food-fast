@@ -152,6 +152,7 @@ form {
     display: none;
     animation-name:success;
     animation-duration: 2s;
+    text-align: center;
 }
 @keyframes success{
     from{opacity: 0}
