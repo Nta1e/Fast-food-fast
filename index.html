@@ -7,20 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Inconsolata|Merienda One|Rochester" rel="stylesheet">
-    <title>Fast-foods-fast|Login</title>
+    <title>Fast-food-fast|Login</title>
 
 </head>
 
 <body>
-    
+
     <header>
 
         <div class = "topnav">
 
-            <span class="header-brand">Fast-food-fast</span> <br>
-            <a class="" href="manage_orders.html">Admin</a>
+            <span class="header-brand">Fast-food-fast</span>
 
-            
         </div>
 
     </header>
@@ -35,19 +33,22 @@
             <aside class="container">
 
 
+                <div class="form">
 
-                <form action="" class="login-form">
+                <form action="" id="loginusers" class="login-form">
+                    <div id="error"></div>
+                    <div id="message"> </div>
                     <span class="label">Username:</span>
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" id = "client" placeholder="Username" minlength="3" required>
 
-                    
+
                     <span class="label">Password:</span>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" id = "loginPassword" placeholder="Password" minlength="5" required>
                     <button formaction="home.html">Login</button><br>
                     <p id="reminder">Don't have an account yet?! <a href = "signup.html">Signup</a></p>
 
                 </form>
-
+                </div>
 
             </aside>
 
@@ -57,12 +58,12 @@
     </main><br><br>
     <footer>
         <span class="foot">
-            &copy 2018 Fast-foods-fast
+            &copy 2018 Fast-food-fast
         </span>
 
     </footer>
 
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>
