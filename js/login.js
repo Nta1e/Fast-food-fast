@@ -29,7 +29,7 @@ function loginUser(event){
         if (status >= 400){
             error.style.display='none';
             error.style.display='block';
-            document.getElementById('error').innerHTML = data["error"];
+            document.getElementById('error').innerHTML = data["Error"];
         }
         if (status == 200 ){
             error.style.display='none';

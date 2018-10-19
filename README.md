@@ -11,7 +11,6 @@ A user creates an account, logs in and access all features of the app.
 ### User Previleges
 - View a list of previous orders
 - Make an Order
-- Update an order
 
 ### Admin Previleges
 - Accept orders
