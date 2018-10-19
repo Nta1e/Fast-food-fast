@@ -1,6 +1,6 @@
 # Fast-food-fast
 Fast-Food-Fast is a food delivery service app for a restaurant.
-The user interface is hosted [here](https://ntaleshadik.github.io/Fast-food-fast/UI/index.html)
+The user interface is hosted [here](https://ntaleshadik.github.io/Fast-food-fast/index.html)
 
 ## Project OverView
 The front-end is built with HTML5, CSS3 and a little bit of Javascript
@@ -11,9 +11,15 @@ A user creates an account, logs in and access all features of the app.
 ### User Previleges
 - View a list of previous orders
 - Make an Order
-- Update an order
 
 ### Admin Previleges
 - Accept orders
 - Decline orders
 - Mark orders as complete
+
+
+https://ntale--v2.herokuapp.com/api/v2/auth/signup
+https://ntale--v2.herokuapp.com/api/v2/auth/login
+https://ntale--v2.herokuapp.com/api/v2/admin/menu
+https://ntale--v2.herokuapp.com/api/v2/admin/menu
+https://ntale--v2.herokuapp.com/api/v2/admin/menu/${meal_id}

@@ -19,13 +19,15 @@
 </header>
 <a href="index.html" onclick="logout()"><i class="fas fa-sign-out-alt"><p id="l-out">LogOut</p></i></a>
 <section>
-<!-- <div id="popupbox" class="popup-position">
-<div id="popup-wrapper"> -->
-
-<!-- </div>
-</div>
- -->
+<div class="btn-comb">
+<div class="order-comb">
 <button id="order-btn" ><b>+</b> Add Order</button>
+</div>
+<div class="menu-comb">
+<a href="view_menu.html"><button id="view-menu" onclick="menu()">View Menu</button></a>
+</div>
+</div>
+
 <table id="ResponsiveTable">
 
 
@@ -54,7 +56,6 @@
                 <td tableHeadData="Order Date:">28-08-2018</td>
                 <td tableHeadData="Delivery time:">13:45</td>
                 <td tableHeadData="Comment">Just...give me my money's worth.</td>
-                <!-- <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td> -->
 
             </tr>
             <tr>
@@ -64,7 +65,7 @@
                 <td tableHeadData="Order Date:">28-08-2018</td>
                 <td tableHeadData="Delivery time:">13:45</td>
                 <td tableHeadData="Comment">Just...give me my money's worth.</td>
-                <!-- <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td> -->
+
 
             </tr>
             <tr>
@@ -74,8 +75,7 @@
                 <td tableHeadData="Order Date:">28-08-2018</td>
                 <td tableHeadData="Delivery time:">13:45</td>
                 <td tableHeadData="Comment">Just...give me my money's worth.</td>
-                <!-- <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td>
- -->
+
             <tr>
                 <td tableHeadData="id">4</td>
                 <td tableHeadData="0rder:">Pilawo</td>
@@ -83,8 +83,7 @@
                 <td tableHeadData="Order Date:">28-08-2018</td>
                 <td tableHeadData="Delivery time:">13:45</td>
                 <td tableHeadData="Comment">Just...give me my money's worth.</td>
-                <!-- <td><a href="javascript:void(0)" onclick="toggle_visibility('popupbox')"><button class="btn-1">Edit</button></a></td>
- -->
+
             </tr>
         </tbody>
 
@@ -111,18 +110,9 @@
             <span class="label">Location:</span>
             <input type="text" placeholder="" required>
         </div>
-        <div class="custom-select" style="width:200px;">
-            <select>
-                <option value="0">...Select Order...</option>
-                <option value="1">1 Chicken Wing</option>
-                <option value="2">3 Chicken Wings</option>
-                <option value="3">Fried fish</option>
-                <option value="4">Meatloaf</option>
-                <option value="5">Pilawo</option>
-                <option value="6">French Fries</option>
-                <option value="7">Beef ribs</option>
-                <option value="8">Pork ribs</option>
-            </select>
+        <div class= "order-input">
+            <span class="label">Order:</span>
+            <input type="text" placeholder="" required>
         </div>
     </div>
 
