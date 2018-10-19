@@ -13,187 +13,61 @@
     <div class="topnav">
             <span class="header-brand">Fast-food-fast</span><br>
                 <a class="admin-nav" href="manage_orders.html">Home</a>
-                <a class="admin-nav" id="active"href=""> Edit-Menu</a>
+                <a class="admin-nav" id="active"href="">Edit-Menu</a>
 
     </div>
 
 </header>
 <div class="bg-modal">
 <div id="modal-content">
-            <div class="form">
-                <div id="error"></div>
+<div class="form">
+<div id="error"></div>
 
-            <form class= "edt-form">
-                <input type="text" placeholder="menu item" required>
-                <input type="number" placeholder="price" required>
-                <a href="admin_edit.html"><button class=" btn-8"><b>+</b> <b>Add</b></button></a>
-            </form>
-            </div>
+<form id = "formEdit"class= "edt-form">
+<input type="text" id="mealEdit"placeholder="menu item" required>
+<input type="number" id="priceEdit" placeholder="price" required>
+<a href="admin_edit.html"><button  id="editBtn"class="btn-8" ><b>+</b> <b>Add</b></button></a>
+</form>
 </div>
 </div>
+</div>
+
 <div class="Box-container">
+<div class="menu-table">
 <table id="admin-table">
+    <div id="table-error"></div>
+    <div id="table-message"></div>
     <th>Id</th>
     <th>Menu-Items:</th>
     <th>Price:</th>
-    <tr>
-        <td>
-            1
-        </td>
-        <td>
-            Pilawo
-        </td>
-        <td>
-            1000
-        </td>
-        <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-        </td>
-        <td id="btns2">
-<a href=""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-        </td>
-    </tr>
-<tr>
-    <td>
-        2
-    </td>
-    <td>
-Pork ribs
-    </td>
-    <td>
-            10000
-    </td>
-    <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href=""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
-<tr>
-    <td>
-        3
-    </td>
-    <td>
-Beef ribs
-    </td>
-    <td>
-            8000
-    </td>
-    <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href="""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
-<tr>
-    <td>
-        4
-    </td>
-    <td>
-French Fries
-    </td>
-    <td>
-            3000
-    </td>
-    <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href=""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
-<tr>
-    <td>
-        5
-    </td>
-    <td>
-Meatloaf
-    </td>
-    <td>
-            6000
-    </td>
-    <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href=""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
-<tr>
-    <td>
-        6
-    </td>
-    <td>
-Fried fish
-    </td>
-    <td>
-            5000
-    </td>
-    <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href=""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
-<tr>
-    <td>
-        7
-    </td>
-    <td>
-3 Chicken Wings
-    </td>
-    <td>
-            3000
-    </td>
-    <td id="btns1">
-        <button class="btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href=""><button class="btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
-<tr>
-</tr>
-<tr></tr>
-<tr>
-    <td>
-        8
-    </td>
-    <td>
-1 chicken wing
-    </td>
-    <td>
-            2500
-    </td>
-    <td id="btns1">
-<button class=" btn-5" onclick="edit()">Edit</button>
-    </td>
-    <td id="btns2">
-<a href=""><button class=" btn-6" onclick="Deleted()">Delete</button></a>
-    </td>
-</tr>
+    <tbody id="meal_options">
+            <!-- <tr>looped through menu</tr> -->
+    </tbody>
 
 <tr>
     <td>
 
     </td>
     <td>
+        <div class="form">
         <form id="add-item">
+
+            <div id="error"></div>
+            <div id="message"> </div>
             <div class="combine2">
             <div class = "menu_item">
-             <input type="text" placeholder="Menu item" required>
+             <input type="text" id = "menuItem"placeholder="Menu item" required>
             </div>
             <div class="add_price">
-             <input type="number" placeholder="Price" required>
+             <input type="number" id = "addPrice"placeholder="Price" required>
             </div>
             <div class="add_btn">
                 <a href=""><button class="btn-7"><b>+</b> <b>Add</b></button></a>
             </div>
             </div>
+
         </form>
+        </div>
     </td>
     <td>
 
@@ -202,6 +76,9 @@ Fried fish
 
 </table>
 </div>
+</div>
+
 <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
