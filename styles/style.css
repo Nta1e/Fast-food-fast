@@ -483,10 +483,43 @@ tr:nth-of-type(odd) {
     display: none;
 
 }
+.bg2-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
 .modal-content{
     width: 1000px;
     height: 400px;
     border-radius: 5px;
+    position: relative;
+}
+.modal2-content{
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #f2f2f2;
+}
+.par{
+    font-color:#1c7f7f;
+    font-family: Merienda One;
+    font-size: 20px;
+
+}
+.itms{
+    font-style: italic;
+    font-weight: normal;
+}
+.key{
+    color:#E74F12;
     position: relative;
 }
 .bg1-modal{
@@ -498,6 +531,12 @@ tr:nth-of-type(odd) {
     text-align: center;
     align-items: center;
     display: flex;
+}
+.views{
+    position:relative;
+    text-align: center;
+    top:50px;
+
 }
 .modal1-content{
     width: 1000px;
@@ -623,6 +662,7 @@ select{
 .checkbox-container {
     display: inline-block;
     top: -18px;
+    left:30px;
     position: relative;
     cursor: pointer;
 }
@@ -660,7 +700,7 @@ select{
 .Box-container{
     width: 900px;
     height: 400px;
-
-    text-align: center;
+    align-content: center;
     margin-left: 300px;
+    text-align: center;
 }

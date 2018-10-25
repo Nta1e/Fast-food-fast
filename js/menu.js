@@ -93,7 +93,7 @@ if (location.href.match(/admin_edit/)){
     })).catch((err)=>console.log(err))
 }
 
-var id=localStorage.getItem('meal_id')
+let id=localStorage.getItem('meal_id')
 document.getElementById('formEdit').addEventListener('submit', editMeal)
 function editMeal(event){
 	event.preventDefault();
@@ -133,6 +133,7 @@ function deleteMeal(meal){
 	let error = document.getElementById('table-error');
     let success = document.getElementById('table-message');
     let status = '';
+    alert('Are you sure you want to delete this meal?!')
 	fetch(`https://ntale--v2.herokuapp.com/api/v2/admin/menu/${meal}/delete`,{
 		method:'DELETE',
 		headers: {
