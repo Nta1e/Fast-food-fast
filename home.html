@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="icon" href="images/icon3.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Merienda One|Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
@@ -33,96 +34,58 @@
 
 <h3 id="TableTitle">Orders </h3>
 
-        <tbody>
             <tr id="HeadRow">
                 <td>
                     <!--ID-->
                 </td>
 
                 <td>Order:</td>
+                <td>Made By:</td>
                 <td>Location:</td>
                 <td>Order Date:</td>
-                <td>Delivery time:</td>
+                <td>Time:</td>
                 <td>Comment:</td>
 
                 <td>
 
                 </td>
             </tr>
-            <tr>
-                <td tableHeadData="id">1</td>
-                <td tableHeadData="0rder:">Pilawo</td>
-                <td tableHeadData="Location:">Ntinda</td>
-                <td tableHeadData="Order Date:">28-08-2018</td>
-                <td tableHeadData="Delivery time:">13:45</td>
-                <td tableHeadData="Comment">Just...give me my money's worth.</td>
-
-            </tr>
-            <tr>
-                <td tableHeadData="id">2</td>
-                <td tableHeadData="0rder:">Pilawo</td>
-                <td tableHeadData="Location:">Ntinda</td>
-                <td tableHeadData="Order Date:">28-08-2018</td>
-                <td tableHeadData="Delivery time:">13:45</td>
-                <td tableHeadData="Comment">Just...give me my money's worth.</td>
-
-
-            </tr>
-            <tr>
-                <td tableHeadData="id">3</td>
-                <td tableHeadData="0rder:">Pilawo</td>
-                <td tableHeadData="Location:">Ntinda</td>
-                <td tableHeadData="Order Date:">28-08-2018</td>
-                <td tableHeadData="Delivery time:">13:45</td>
-                <td tableHeadData="Comment">Just...give me my money's worth.</td>
-
-            <tr>
-                <td tableHeadData="id">4</td>
-                <td tableHeadData="0rder:">Pilawo</td>
-                <td tableHeadData="Location:">Ntinda</td>
-                <td tableHeadData="Order Date:">28-08-2018</td>
-                <td tableHeadData="Delivery time:">13:45</td>
-                <td tableHeadData="Comment">Just...give me my money's worth.</td>
-
-            </tr>
-        </tbody>
+            <tbody id="orders-made">
+                    <!-- <tr>looped through menu</tr> -->
+            </tbody>
 
     </table>
     <div class="bg-modal">
         <div class="modal-content">
             <div class="form">
-                <div id="error"></div>
-            <form action="" class="order-form">
+
+    <form action="" id="formEdit" class="order-form">
+    <div id="error"></div>
     <div class="combine">
 
         <div class="datef">
             <span class="label">Date:</span>
-            <input type="date" size="30" required>
+            <input type="date" size="30" id="date" required>
         </div>
 
         <div class="tim">
-            <span class="label">Delivery Time:</span>
-            <input type="time" size="30" required>
+            <span class="label">Time:</span>
+            <input type="time" size="30" id="tyme">
         </div>
     </div>
     <div class="combine1">
         <div class="location-input">
             <span class="label">Location:</span>
-            <input type="text" placeholder="" required>
+            <input type="text" placeholder="" id="location"required>
         </div>
         <div class= "order-input">
             <span class="label">Order:</span>
-            <input type="text" placeholder="" required>
+            <input type="text" placeholder="" id="order"required>
         </div>
     </div>
-
-
-
     <span class="label">comment:</span><br>
-    <textarea name="comment" class="commentbox" required></textarea>
+    <textarea name="comment" class="commentbox" id="comment"required></textarea>
 <a href="home.html"><button >Make Order</button><a>
-
-
 </form>
 </div>
 
@@ -135,6 +98,7 @@
 
 <script src="js/main.js"></script>
 <script src="js/login.js"></script>
+<script src="js/orders.js"></script>
 
 </body>
 
