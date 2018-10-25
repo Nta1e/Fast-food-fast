@@ -39,6 +39,6 @@ function userSignup(event){
             success.style.display= 'block';
             document.getElementById('message').innerHTML = data['message'];
         }
-    })
+    }).catch((err)=>console.log(err))
 }
 
