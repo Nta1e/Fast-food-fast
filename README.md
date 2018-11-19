@@ -1,6 +1,6 @@
 # Fast-food-fast
 Fast-Food-Fast is a food delivery service app for a restaurant.
-The user interface is hosted [here](https://ntale--ui.herokuapp.com)
+The user interface is hosted [here](https://ntales--ui.herokuapp.com)
 
 ## Project OverView
 The front-end is built with HTML5, CSS3 and a little bit of Javascript
